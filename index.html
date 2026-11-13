@@ -1,113 +1,96 @@
-<title>Jaswantth — Fitness Coaching</title>
+<title>Jaswantth — 90-Day Total Reset for Telugu NRI Professionals</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600&display=swap">
 
 <style>
 :root {
-  --bg:      #000;
-  --panel:   #0c000c;
-  --accent:  #9333ea;
-  --ah:      #a855f7;
-  --al:      #7c3aed;
-  --glow:    rgba(147,51,234,.45);
-  --border:  rgba(147,51,234,.18);
-  --fh:      'Archivo', system-ui, sans-serif;
-  --fb:      'Inter', system-ui, sans-serif;
+  --bg:     #000;
+  --panel:  #0c000c;
+  --alt:    #06000a;
+  --accent: #9333ea;
+  --ah:     #a855f7;
+  --al:     #7c3aed;
+  --glow:   rgba(147,51,234,.45);
+  --border: rgba(147,51,234,.18);
+  --fh:     'Archivo', system-ui, sans-serif;
+  --fb:     'Inter', system-ui, sans-serif;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  background: var(--bg);
-  color: #fff;
-  font-family: var(--fb);
-  font-size: 17px;
-  line-height: 1.65;
+  background: var(--bg); color: #fff;
+  font-family: var(--fb); font-size: 17px; line-height: 1.65;
   overflow-x: hidden;
 }
 
-/* ── NAV ── */
+/* NAV */
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 0 40px;
-  height: 64px;
-  background: rgba(0,0,0,.85);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  padding: 0 40px; height: 64px;
+  background: rgba(0,0,0,.88); backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
 }
-.logo { font-family: var(--fh); font-size: 1.1rem; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; color: #fff; }
+.logo { font-family: var(--fh); font-size: 1.1rem; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
 .nav-btn {
   background: var(--accent); color: #fff;
   font-family: var(--fh); font-weight: 800; font-size: .72rem;
   letter-spacing: .12em; text-transform: uppercase;
   border: none; border-radius: 6px; padding: 10px 24px;
-  cursor: pointer; text-decoration: none;
-  transition: background .18s;
+  cursor: pointer; text-decoration: none; transition: background .18s;
 }
 .nav-btn:hover { background: var(--ah); }
-@media (max-width: 500px) { .nav { padding: 0 20px; } .nav-btn { display: none; } }
+@media (max-width:500px) { .nav { padding: 0 18px; } .nav-btn { display: none; } }
 
-/* ── HERO ── */
+/* HERO */
 .hero {
   min-height: 100svh;
   display: flex; flex-direction: column; justify-content: center;
   padding: 80px 40px 60px;
-  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(147,51,234,.2) 0%, transparent 65%);
+  background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(147,51,234,.18) 0%, transparent 65%);
 }
 .hero-inner {
   max-width: 1160px; margin: 0 auto; width: 100%;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
-}
-@media (max-width: 860px) {
-  .hero-inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
-  .hero-inner .chip { margin-left: auto; margin-right: auto; }
-  .hero-inner .micro { text-align: center; }
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
 }
 .hero-left { display: flex; flex-direction: column; align-items: flex-start; }
-@media (max-width: 860px) { .hero-left { align-items: center; } }
 .chip {
   display: inline-flex; align-items: center; gap: 8px;
-  border: 1px solid var(--border);
-  border-radius: 100px; padding: 6px 18px;
+  border: 1px solid var(--border); border-radius: 100px; padding: 6px 18px;
   font-size: .68rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase;
-  color: rgba(255,255,255,.75); margin-bottom: 28px;
+  color: rgba(255,255,255,.65); margin-bottom: 24px;
 }
-.chip-dot {
-  width: 6px; height: 6px; border-radius: 50%;
-  background: var(--ah); box-shadow: 0 0 8px var(--ah);
-  animation: pulse 2s ease-in-out infinite;
-}
+.chip-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ah); box-shadow: 0 0 8px var(--ah); animation: pulse 2s ease-in-out infinite; }
 @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.3;transform:scale(.7)} }
 .h1 {
-  font-family: var(--fh);
-  font-size: clamp(1.9rem, 3.2vw, 3rem);
-  font-weight: 900; line-height: 1.08;
-  letter-spacing: -.025em;
-  text-wrap: balance;
-  margin: 0 0 18px;
+  font-family: var(--fh); font-size: clamp(1.9rem, 3vw, 2.9rem);
+  font-weight: 900; line-height: 1.08; letter-spacing: -.025em;
+  text-wrap: balance; margin: 0 0 18px;
 }
 .h1 em { font-style: normal; color: var(--ah); }
-.hero-sub {
-  font-size: 1rem; color: rgba(255,255,255,.7);
-  max-width: 440px; margin: 0 0 36px; line-height: 1.72;
+.hero-sub { font-size: 1rem; color: rgba(255,255,255,.65); max-width: 440px; margin: 0 0 32px; line-height: 1.72; }
+.micro { font-size: .72rem; color: rgba(255,255,255,.4); margin-top: 10px; }
+@media (max-width:860px) {
+  .hero { padding: 80px 20px 56px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 36px; text-align: center; }
+  .hero-left { align-items: center; }
+  .hero-sub { max-width: 100%; }
 }
 
-/* ── VSL ── */
+/* VSL */
 .vsl-wrap { width: 100%; }
 .vsl {
   position: relative; width: 100%; aspect-ratio: 16/9;
-  background: var(--panel);
-  border-radius: 16px; overflow: hidden;
+  background: var(--panel); border-radius: 16px; overflow: hidden;
   border: 1px solid rgba(147,51,234,.3);
-  box-shadow: 0 0 60px rgba(147,51,234,.22), 0 0 120px rgba(147,51,234,.08);
+  box-shadow: 0 0 60px rgba(147,51,234,.2), 0 0 120px rgba(147,51,234,.07);
   cursor: pointer;
 }
 .vsl-thumb {
   position: absolute; inset: 0;
   background: radial-gradient(ellipse 100% 80% at 50% 50%, rgba(147,51,234,.22), transparent 70%);
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;
   transition: opacity .3s;
 }
 .vsl-thumb.hidden { opacity: 0; pointer-events: none; }
@@ -115,31 +98,26 @@ body {
   width: 72px; height: 72px; border-radius: 50%;
   background: linear-gradient(135deg, var(--al), var(--ah));
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 0 44px var(--glow);
-  animation: glow-pulse 2.5s ease-in-out infinite;
-  transition: transform .2s;
+  box-shadow: 0 0 44px var(--glow); transition: transform .2s;
+  animation: glow-p 2.5s ease-in-out infinite;
 }
 .vsl:hover .play { transform: scale(1.08); }
-@keyframes glow-pulse { 0%,100%{box-shadow:0 0 44px var(--glow)} 50%{box-shadow:0 0 70px rgba(147,51,234,.75)} }
+@keyframes glow-p { 0%,100%{box-shadow:0 0 44px var(--glow)} 50%{box-shadow:0 0 70px rgba(147,51,234,.75)} }
 .play-tri { width:0;height:0;border-top:12px solid transparent;border-bottom:12px solid transparent;border-left:20px solid #fff;margin-left:4px; }
-.vsl-label { font-family: var(--fh); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.75); }
-.vsl-dur { font-size: .72rem; color: rgba(255,255,255,.45); }
-.vsl-bar { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: rgba(255,255,255,.08); }
-.vsl-fill { height: 100%; width: 0; background: linear-gradient(90deg,var(--al),var(--ah)); }
-.vsl-ctrl {
-  position: absolute; bottom: 10px; left: 14px; right: 14px;
-  display: flex; align-items: center; gap: 10px;
-  opacity: 0; transition: opacity .25s;
-}
-.vsl.playing .vsl-ctrl, .vsl:hover .vsl-ctrl { opacity: 1; }
-.vt { font-size: .7rem; color: rgba(255,255,255,.65); font-variant-numeric: tabular-nums; }
-.vsl-seek { flex: 1; height: 3px; background: rgba(255,255,255,.15); border-radius: 2px; }
+.vsl-lbl { font-family: var(--fh); font-size: .76rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.65); }
+.vsl-dur { font-size: .7rem; color: rgba(255,255,255,.4); }
+.vsl-bar { position:absolute;bottom:0;left:0;right:0;height:3px;background:rgba(255,255,255,.07); }
+.vsl-fill { height:100%;width:0;background:linear-gradient(90deg,var(--al),var(--ah)); }
+.vsl-ctrl { position:absolute;bottom:10px;left:14px;right:14px;display:flex;align-items:center;gap:10px;opacity:0;transition:opacity .25s; }
+.vsl.playing .vsl-ctrl, .vsl:hover .vsl-ctrl { opacity:1; }
+.vt { font-size:.7rem;color:rgba(255,255,255,.6);font-variant-numeric:tabular-nums; }
+.vsl-seek { flex:1;height:3px;background:rgba(255,255,255,.14);border-radius:2px; }
 .vs-fill { width:0;height:100%;background:var(--ah);border-radius:2px; }
 
-/* ── SHARED ── */
+/* BUTTONS */
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
-  background: linear-gradient(135deg,var(--al),var(--accent),var(--ah));
+  background: linear-gradient(135deg, var(--al), var(--accent), var(--ah));
   color: #fff; font-family: var(--fh); font-weight: 800;
   font-size: .95rem; letter-spacing: .07em; text-transform: uppercase;
   border: none; border-radius: 8px; padding: 17px 48px;
@@ -149,195 +127,205 @@ body {
 }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 44px rgba(147,51,234,.7); }
 .btn:active { transform: none; }
-.micro { font-size: .75rem; color: rgba(255,255,255,.5); margin-top: 12px; }
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid var(--accent);
+  color: #fff; box-shadow: none;
+}
+.btn-outline:hover { background: rgba(147,51,234,.1); box-shadow: 0 0 24px rgba(147,51,234,.25); }
 
-/* ── STATS ── */
+/* STATS */
 .stats {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 24px 56px;
-  padding: 36px 20px;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 20px 52px;
+  padding: 32px 20px;
   border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
   background: var(--panel);
 }
 .stat { text-align: center; }
-.stat-n { font-family: var(--fh); font-size: 2rem; font-weight: 900; color: var(--ah); line-height: 1; display: block; }
-.stat-l { font-size: .65rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-top: 4px; }
+.stat-n { font-family: var(--fh); font-size: 1.9rem; font-weight: 900; color: var(--ah); line-height: 1; display: block; }
+.stat-l { font-size: .62rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-top: 4px; }
 
-/* ── SECTION SHELL ── */
-.s {
-  min-height: 100svh;
-  display: flex; flex-direction: column; justify-content: center;
-  padding: 100px 40px;
-}
-.s-alt { background: #05000a; }
-.inner { max-width: 900px; margin: 0 auto; width: 100%; }
-.inner-sm { max-width: 680px; margin: 0 auto; width: 100%; }
-.tag { font-size: .65rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--ah); margin-bottom: 12px; }
-.h2 { font-family: var(--fh); font-size: clamp(1.8rem,3.5vw,2.6rem); font-weight: 900; line-height: 1.1; text-wrap: balance; margin-bottom: 14px; }
-.rule { width: 44px; height: 3px; background: linear-gradient(90deg,var(--al),var(--ah)); border-radius: 2px; margin-bottom: 32px; }
+/* SECTIONS */
+.s { min-height: 100svh; display: flex; flex-direction: column; justify-content: center; padding: 100px 40px; }
+.s-alt { background: var(--alt); }
+.inner { max-width: 920px; margin: 0 auto; width: 100%; }
+.inner-sm { max-width: 700px; margin: 0 auto; width: 100%; }
+.tag { font-size: .62rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--ah); margin-bottom: 10px; }
+.h2 { font-family: var(--fh); font-size: clamp(1.8rem, 3.2vw, 2.5rem); font-weight: 900; line-height: 1.1; text-wrap: balance; margin-bottom: 12px; }
+.rule { width: 44px; height: 3px; background: linear-gradient(90deg, var(--al), var(--ah)); border-radius: 2px; margin-bottom: 32px; }
 .rule-c { margin-left: auto; margin-right: auto; }
-.body-txt { font-size: 1rem; color: rgba(255,255,255,.75); line-height: 1.75; }
-@media (max-width: 700px) { .s { padding: 80px 20px; } }
+.muted { font-size: .97rem; color: rgba(255,255,255,.65); line-height: 1.72; }
+@media (max-width:700px) { .s { padding: 80px 20px; } }
 
-/* ── PAIN ── */
+/* PAIN */
 .pain-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-top: 36px; }
 .pi {
   display: flex; align-items: flex-start; gap: 14px;
   padding: 18px 20px;
-  background: rgba(239,68,68,.04); border: 1px solid rgba(239,68,68,.12); border-radius: 10px;
+  background: rgba(239,68,68,.04); border: 1px solid rgba(239,68,68,.1); border-radius: 10px;
 }
-.px { color: #ef4444; font-size: .9rem; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
-.pt { font-size: .97rem; color: rgba(255,255,255,.85); line-height: 1.55; }
+.px { color: #ef4444; font-size: .85rem; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+.pt { font-size: .97rem; color: rgba(255,255,255,.8); line-height: 1.55; }
 .pt strong { color: #fff; font-weight: 600; }
 
-/* ── FEATURES ── */
-.feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 14px; margin-top: 40px; }
-.fc {
-  background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 32px 26px;
+/* PILLARS */
+.pillar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 14px; margin-top: 40px; }
+.pc {
+  background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 30px 24px;
   transition: border-color .2s, transform .22s;
 }
-.fc:hover { border-color: rgba(147,51,234,.45); transform: translateY(-3px); }
-.fi { color: var(--ah); margin-bottom: 16px; }
-.fi svg { width: 2rem; height: 2rem; display:block; stroke:currentColor; fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
-.ft { font-family: var(--fh); font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: 8px; }
-.fd { font-size: .93rem; color: rgba(255,255,255,.7); line-height: 1.6; }
+.pc:hover { border-color: rgba(147,51,234,.45); transform: translateY(-3px); }
+.pi2 { color: var(--ah); margin-bottom: 14px; }
+.pi2 svg { width: 2rem; height: 2rem; display:block; stroke:currentColor; fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.pt2 { font-family: var(--fh); font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: 10px; }
+.pd { font-size: .92rem; color: rgba(255,255,255,.65); line-height: 1.6; }
+.pd li { margin-left: 16px; margin-bottom: 4px; }
 
-/* ── RESULTS ── */
+/* TIMELINE */
+.timeline { display: flex; flex-direction: column; gap: 0; margin-top: 40px; }
+.phase {
+  display: flex; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--border);
+}
+.phase:last-child { border-bottom: none; }
+.ph-num {
+  flex-shrink: 0; min-width: 90px;
+  font-family: var(--fh); font-size: .72rem; font-weight: 800;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ah); padding-top: 2px;
+}
+.ph-body { flex: 1; }
+.ph-title { font-family: var(--fh); font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: 5px; }
+.ph-desc { font-size: .92rem; color: rgba(255,255,255,.65); line-height: 1.6; }
+.ph-outcome {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ah); margin-top: 8px;
+}
+.ph-outcome::before { content: ''; width: 16px; height: 1.5px; background: var(--ah); flex-shrink: 0; }
+
+/* RESULTS */
 .res-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(265px,1fr)); gap: 14px; margin-top: 40px; }
 .rc {
-  background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 28px 24px;
+  background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 26px 22px;
   display: flex; flex-direction: column; gap: 12px;
 }
 .stars { display:flex; gap:3px; }
-.stars svg { width:14px; height:14px; }
-.res-num { font-family: var(--fh); font-size: 1.3rem; font-weight: 900; color: var(--ah); line-height: 1.1; }
-.res-q { font-size: .92rem; color: rgba(255,255,255,.75); line-height: 1.65; font-style: italic; }
-.res-auth { display:flex; align-items:center; gap:10px; margin-top:auto; }
-.av {
-  width: 40px; height: 40px; border-radius: 50%;
-  background: linear-gradient(135deg,var(--al),var(--ah));
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--fh); font-weight: 800; font-size: .82rem; color: #fff; flex-shrink: 0;
-}
-.an { font-family: var(--fh); font-weight: 700; font-size: .85rem; color: #fff; }
-.ad { font-size: .72rem; color: rgba(255,255,255,.5); }
+.stars svg { width:14px;height:14px; }
+.res-num { font-family: var(--fh); font-size: 1.25rem; font-weight: 900; color: var(--ah); line-height: 1.1; }
+.res-q { font-size: .92rem; color: rgba(255,255,255,.7); line-height: 1.65; font-style: italic; }
+.res-auth { display:flex;align-items:center;gap:10px;margin-top:auto; }
+.av { width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--al),var(--ah));display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-weight:800;font-size:.8rem;color:#fff;flex-shrink:0; }
+.an { font-family:var(--fh);font-weight:700;font-size:.85rem;color:#fff; }
+.ad { font-size:.7rem;color:rgba(255,255,255,.45); }
 
-/* ── ABOUT ── */
-.about-layout { display: flex; gap: 48px; align-items: flex-start; margin-top: 40px; }
-.about-card {
-  flex-shrink: 0; width: 180px; height: 220px; border-radius: 16px;
-  border: 1px solid var(--border);
-  background: linear-gradient(160deg,rgba(147,51,234,.25),rgba(147,51,234,.05));
-  display: flex; align-items: center; justify-content: center;
+/* PRICING */
+.price-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 40px; }
+@media (max-width:640px) { .price-grid { grid-template-columns: 1fr; } }
+.price-card {
+  background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 36px 28px;
+  display: flex; flex-direction: column; gap: 20px; position: relative; overflow: hidden;
 }
-.about-card svg { width: 68px; height: 68px; stroke: rgba(147,51,234,.5); fill:none; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
-.about-txt { flex: 1; min-width: 0; }
-.about-name { font-family: var(--fh); font-size: 1.5rem; font-weight: 900; margin-bottom: 2px; }
-.about-role { font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ah); margin-bottom: 20px; }
-.about-p { font-size: .97rem; color: rgba(255,255,255,.75); line-height: 1.72; margin-bottom: 14px; }
-.creds { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-.cr { display:flex; align-items:center; gap:10px; font-size:.93rem; color:rgba(255,255,255,.8); }
-.cr svg { width:17px;height:17px;flex-shrink:0;stroke:var(--ah);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round; }
-@media (max-width:600px) {
-  .about-layout { flex-direction:column; align-items:center; }
-  .about-txt { text-align:center; }
-  .cr { justify-content:center; }
+.price-card.featured {
+  border-color: rgba(147,51,234,.5);
+  box-shadow: 0 0 44px rgba(147,51,234,.14);
 }
+.price-badge {
+  position: absolute; top: 20px; right: 20px;
+  background: var(--accent); color: #fff;
+  font-family: var(--fh); font-size: .65rem; font-weight: 800;
+  letter-spacing: .12em; text-transform: uppercase;
+  border-radius: 100px; padding: 4px 12px;
+}
+.price-tier { font-family: var(--fh); font-size: .72rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--ah); }
+.price-num { font-family: var(--fh); font-size: 2.6rem; font-weight: 900; line-height: 1; color: #fff; }
+.price-num sup { font-size: .45em; vertical-align: super; color: rgba(255,255,255,.65); }
+.price-per { font-size: .78rem; color: rgba(255,255,255,.45); margin-top: 2px; }
+.price-desc { font-size: .92rem; color: rgba(255,255,255,.65); line-height: 1.6; }
+.price-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.price-list li { display: flex; align-items: flex-start; gap: 10px; font-size: .92rem; color: rgba(255,255,255,.8); }
+.price-list li::before { content: '✓'; color: var(--ah); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.price-note { font-size: .75rem; color: rgba(255,255,255,.4); text-align: center; }
 
-/* ── STEPS ── */
-.steps { display: flex; flex-direction: column; margin-top: 40px; }
-.step { display:flex; gap:24px; padding:28px 0; border-bottom:1px solid var(--border); }
-.step:last-child { border-bottom:none; }
-.sn {
-  flex-shrink:0; width:46px; height:46px; border-radius:50%;
-  border:2px solid var(--accent);
-  display:flex; align-items:center; justify-content:center;
-  font-family:var(--fh); font-weight:900; font-size:.9rem; color:var(--ah);
-}
-.sb { flex:1; padding-top:9px; }
-.st { font-family:var(--fh); font-size:.97rem; font-weight:800; color:#fff; margin-bottom:5px; }
-.sd { font-size:.92rem; color:rgba(255,255,255,.65); line-height:1.6; }
-
-/* ── GUARANTEE ── */
+/* GUARANTEE */
 .g-box {
-  display:flex; gap:28px; align-items:flex-start;
-  background:var(--panel); border:1px solid rgba(147,51,234,.3); border-radius:16px;
-  padding:36px; margin-top:40px;
-  box-shadow: 0 0 40px rgba(147,51,234,.1);
+  display: flex; gap: 28px; align-items: flex-start;
+  background: var(--panel); border: 1px solid rgba(147,51,234,.28); border-radius: 16px;
+  padding: 36px; margin-top: 40px;
+  box-shadow: 0 0 40px rgba(147,51,234,.09);
 }
 .g-badge {
-  flex-shrink:0; width:88px; height:88px; border-radius:50%;
-  background:linear-gradient(135deg,var(--al),var(--ah));
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  box-shadow:0 0 28px var(--glow); text-align:center; padding:10px;
+  flex-shrink: 0; width: 88px; height: 88px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--al), var(--ah));
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  box-shadow: 0 0 28px var(--glow); text-align: center; padding: 10px;
 }
-.gd { font-family:var(--fh); font-size:1.6rem; font-weight:900; color:#fff; line-height:1; }
-.gl { font-size:.55rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; line-height:1.4; color:#fff; }
-.g-title { font-family:var(--fh); font-size:1.15rem; font-weight:800; margin-bottom:9px; }
-.g-body { font-size:.95rem; color:rgba(255,255,255,.75); line-height:1.65; }
-@media (max-width:500px) { .g-box { flex-direction:column; align-items:center; text-align:center; padding:28px 20px; } }
+.gd { font-family: var(--fh); font-size: 1.6rem; font-weight: 900; color: #fff; line-height: 1; }
+.gl { font-size: .54rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; line-height: 1.4; color: #fff; }
+.g-title { font-family: var(--fh); font-size: 1.1rem; font-weight: 800; margin-bottom: 8px; }
+.g-body { font-size: .93rem; color: rgba(255,255,255,.7); line-height: 1.65; }
+@media (max-width:500px) { .g-box { flex-direction: column; align-items: center; text-align: center; padding: 28px 18px; } }
 
-/* ── FORM ── */
+/* FORM */
 .form-box {
-  background:var(--panel); border:1px solid rgba(147,51,234,.35); border-radius:20px;
-  padding:52px 44px; margin-top:40px;
+  background: var(--panel); border: 1px solid rgba(147,51,234,.32); border-radius: 20px;
+  padding: 48px 44px; margin-top: 40px;
   box-shadow: 0 0 60px rgba(147,51,234,.1);
 }
-.form-box h3 { font-family:var(--fh); font-size:1.4rem; font-weight:900; margin-bottom:6px; }
-.form-box p { font-size:.93rem; color:rgba(255,255,255,.65); margin-bottom:30px; line-height:1.6; }
-.form { display:flex; flex-direction:column; gap:14px; }
-.row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-@media (max-width:540px) { .row { grid-template-columns:1fr; } .form-box { padding:32px 20px; } }
-.field { display:flex; flex-direction:column; gap:5px; }
-.field label { font-size:.7rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.55); }
+.form-box h3 { font-family: var(--fh); font-size: 1.35rem; font-weight: 900; margin-bottom: 6px; }
+.form-box .form-sub { font-size: .92rem; color: rgba(255,255,255,.55); margin-bottom: 28px; line-height: 1.6; }
+.form { display: flex; flex-direction: column; gap: 13px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+@media (max-width:540px) { .row { grid-template-columns: 1fr; } .form-box { padding: 30px 18px; } }
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field label { font-size: .66rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.45); }
 .field input, .field select, .field textarea {
-  background:rgba(255,255,255,.04); border:1px solid rgba(147,51,234,.25); border-radius:8px;
-  color:#fff; font-family:var(--fb); font-size:.95rem;
-  padding:12px 15px; outline:none;
-  transition:border-color .18s, box-shadow .18s;
-  appearance:none; -webkit-appearance:none;
+  background: rgba(255,255,255,.04); border: 1px solid rgba(147,51,234,.22); border-radius: 8px;
+  color: #fff; font-family: var(--fb); font-size: .93rem;
+  padding: 12px 14px; outline: none;
+  transition: border-color .18s, box-shadow .18s;
+  appearance: none; -webkit-appearance: none;
 }
-.field input::placeholder, .field textarea::placeholder { color:rgba(255,255,255,.25); }
+.field input::placeholder, .field textarea::placeholder { color: rgba(255,255,255,.22); }
 .field input:focus, .field select:focus, .field textarea:focus {
-  border-color:var(--ah); box-shadow:0 0 0 3px rgba(147,51,234,.15);
+  border-color: var(--ah); box-shadow: 0 0 0 3px rgba(147,51,234,.14);
 }
-.field select option { background:#140014; }
-.field textarea { resize:vertical; min-height:100px; }
-.form-note { font-size:.72rem; color:rgba(255,255,255,.4); display:flex; align-items:center; justify-content:center; gap:6px; margin-top:12px; }
-#formSuccess { display:none; text-align:center; padding:40px 0; }
-.check-icon { width:52px;height:52px;display:block;margin:0 auto 16px;stroke:var(--ah);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round; }
-.success-title { font-family:var(--fh);font-size:1.3rem;font-weight:900;margin-bottom:8px; }
-.success-body { font-size:.93rem;color:rgba(255,255,255,.65); }
+.field select option { background: #130013; }
+.field textarea { resize: vertical; min-height: 90px; }
+.form-note { font-size: .7rem; color: rgba(255,255,255,.35); display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 10px; }
+#formSuccess { display: none; text-align: center; padding: 44px 0; }
+.check-icon { width: 50px; height: 50px; display: block; margin: 0 auto 14px; stroke: var(--ah); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.success-title { font-family: var(--fh); font-size: 1.3rem; font-weight: 900; margin-bottom: 8px; }
+.success-body { font-size: .92rem; color: rgba(255,255,255,.6); }
 
-/* ── FAQ ── */
-.faq { display:flex;flex-direction:column;gap:2px;margin-top:40px; }
-.fi2 { background:var(--panel);border:1px solid var(--border);border-radius:10px;overflow:hidden; }
+/* FAQ */
+.faq { display: flex; flex-direction: column; gap: 2px; margin-top: 40px; }
+.fi { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
 .fq {
-  width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;
-  padding:20px 24px;background:none;border:none;
-  color:#fff;font-family:var(--fh);font-size:.93rem;font-weight:700;
-  text-align:left;cursor:pointer;transition:color .18s;
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  padding: 19px 22px; background: none; border: none;
+  color: #fff; font-family: var(--fh); font-size: .92rem; font-weight: 700;
+  text-align: left; cursor: pointer; transition: color .18s;
 }
-.fq:hover { color:var(--ah); }
+.fq:hover { color: var(--ah); }
 .farr {
-  flex-shrink:0;width:20px;height:20px;border:1.5px solid rgba(255,255,255,.25);border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  font-size:.62rem;color:rgba(255,255,255,.4);
-  transition:transform .22s,border-color .22s,color .22s;
+  flex-shrink: 0; width: 20px; height: 20px; border: 1.5px solid rgba(255,255,255,.22); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .6rem; color: rgba(255,255,255,.4);
+  transition: transform .22s, border-color .22s, color .22s;
 }
-.fi2.open .farr { transform:rotate(180deg);border-color:var(--ah);color:var(--ah); }
-.fa { display:none;padding:0 24px 18px;font-size:.93rem;color:rgba(255,255,255,.7);line-height:1.65; }
-.fi2.open .fa { display:block; }
+.fi.open .farr { transform: rotate(180deg); border-color: var(--ah); color: var(--ah); }
+.fa { display: none; padding: 0 22px 17px; font-size: .92rem; color: rgba(255,255,255,.65); line-height: 1.65; }
+.fi.open .fa { display: block; }
 
-/* ── FOOTER CTA ── */
+/* FOOTER CTA */
 .fcta {
-  min-height: 60svh;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  text-align:center; padding:80px 20px;
-  background:radial-gradient(ellipse 70% 60% at 50% 100%,rgba(147,51,234,.18),transparent 70%);
+  min-height: 60svh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 80px 20px;
+  background: radial-gradient(ellipse 70% 60% at 50% 100%, rgba(147,51,234,.18), transparent 70%);
 }
-.footer-legal { background:var(--panel);border-top:1px solid var(--border);padding:22px 20px;text-align:center; }
-.footer-legal p { font-size:.7rem;color:rgba(255,255,255,.35);max-width:640px;margin:0 auto 4px;line-height:1.6; }
-.footer-legal a { color:rgba(255,255,255,.4);text-decoration:underline; }
+.footer-legal { background: var(--panel); border-top: 1px solid var(--border); padding: 20px; text-align: center; }
+.footer-legal p { font-size: .68rem; color: rgba(255,255,255,.3); max-width: 640px; margin: 0 auto 4px; line-height: 1.6; }
+.footer-legal a { color: rgba(255,255,255,.35); text-decoration: underline; }
 </style>
 
 <!-- NAV -->
@@ -349,25 +337,23 @@ body {
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <!-- Left: copy -->
     <div class="hero-left">
-      <div class="chip"><span class="chip-dot"></span>Fitness &amp; Weight Loss Coaching</div>
-      <h1 class="h1">Get Lean, Lose Weight &amp; Feel <em>Genuinely Confident</em> in Your Body</h1>
-      <p class="hero-sub">1-on-1 online coaching personalised to your life. No crash diets. No punishing workouts. Just real, lasting results.</p>
-      <a href="#apply" class="btn">Apply for Coaching — It's Free</a>
-      <p class="micro" style="margin-top:12px">Free strategy call &nbsp;·&nbsp; Limited spots each month</p>
+      <div class="chip"><span class="chip-dot"></span>For Telugu NRI Professionals · US &amp; UK</div>
+      <h1 class="h1">You Cracked the H-1B.<br>Now <em>Fix the Body</em> That Paid the Price.</h1>
+      <p class="hero-sub">A 90-day 1-on-1 coaching system built specifically for Telugu working professionals in the US and UK — around your job, your desi food, and your schedule.</p>
+      <a href="#apply" class="btn">Apply for the 90-Day Reset</a>
+      <p class="micro">Free 15-min discovery call &nbsp;·&nbsp; Telugu / Tenglish &nbsp;·&nbsp; Limited spots</p>
     </div>
-    <!-- Right: VSL -->
     <div class="vsl-wrap">
       <div class="vsl" id="vsl" onclick="toggleVSL()">
         <div class="vsl-thumb" id="vthumb">
           <div class="play"><div class="play-tri"></div></div>
-          <div class="vsl-label">Watch — How My Clients Transform</div>
-          <div class="vsl-dur">3 min · Free to watch</div>
+          <div class="vsl-lbl">Watch Before You Apply</div>
+          <div class="vsl-dur">3 min · Telugu / Tenglish</div>
         </div>
         <div class="vsl-bar"><div class="vsl-fill" id="vfill"></div></div>
         <div class="vsl-ctrl">
-          <span id="vbtn" style="font-size:.8rem;color:rgba(255,255,255,.75);cursor:pointer;" onclick="event.stopPropagation();toggleVSL()">&#9646;&#9646;</span>
+          <span id="vbtn" style="font-size:.8rem;color:rgba(255,255,255,.7);cursor:pointer;" onclick="event.stopPropagation();toggleVSL()">&#9646;&#9646;</span>
           <span class="vt" id="vtime">0:00</span>
           <div class="vsl-seek"><div class="vs-fill" id="vsfill"></div></div>
           <span class="vt">3:00</span>
@@ -379,80 +365,134 @@ body {
 
 <!-- STATS -->
 <div class="stats">
-  <div class="stat"><span class="stat-n">200+</span><span class="stat-l">Clients Transformed</span></div>
-  <div class="stat"><span class="stat-n">4.9/5</span><span class="stat-l">Average Rating</span></div>
-  <div class="stat"><span class="stat-n">3–5 kg</span><span class="stat-l">Avg. Loss / 30 Days</span></div>
-  <div class="stat"><span class="stat-n">100%</span><span class="stat-l">Personalised Plans</span></div>
+  <div class="stat"><span class="stat-n">200+</span><span class="stat-l">NRI Clients Transformed</span></div>
+  <div class="stat"><span class="stat-n">US &amp; UK</span><span class="stat-l">Timezones Covered</span></div>
+  <div class="stat"><span class="stat-n">90 Days</span><span class="stat-l">Average Transformation</span></div>
+  <div class="stat"><span class="stat-n">Telugu</span><span class="stat-l">Coached in Your Language</span></div>
 </div>
 
 <!-- PAIN -->
 <section class="s s-alt">
   <div class="inner-sm">
-    <div class="tag">Sound Familiar?</div>
-    <h2 class="h2">You're Trying Hard — But Nothing Is Working</h2>
+    <div class="tag">The Real Problem</div>
+    <h2 class="h2">You solved the career. The body is still unsolved.</h2>
     <div class="rule"></div>
+    <p class="muted" style="margin-bottom:32px">You moved to the US or UK. Got the job. Sends money home. The LinkedIn is polished. But somewhere between the H-1B grind, the 12-hour days, and the Uber Eats orders — the body fell apart. And the worst part? You can't blame circumstances anymore.</p>
     <ul class="pain-list">
-      <li class="pi"><span class="px">✕</span><span class="pt"><strong>You've tried diets and plans before</strong> — but always fall off after 2–3 weeks.</span></li>
-      <li class="pi"><span class="px">✕</span><span class="pt"><strong>You feel lost in the gym</strong> — not sure what to do or if you're even doing it right.</span></li>
-      <li class="pi"><span class="px">✕</span><span class="pt"><strong>You're eating "healthy" but the scale won't move</strong> and your energy is still low.</span></li>
-      <li class="pi"><span class="px">✕</span><span class="pt"><strong>You've lost weight before, but it always comes back</strong> — you want results that last this time.</span></li>
+      <li class="pi"><span class="px">✕</span><span class="pt"><strong>You wear an oversized hoodie to the office</strong> while your American colleagues look put together without trying.</span></li>
+      <li class="pi"><span class="px">✕</span><span class="pt"><strong>Relatives comment within 5 minutes of landing in India.</strong> The salary impresses them. The body doesn't.</span></li>
+      <li class="pi"><span class="px">✕</span><span class="pt"><strong>You've tried gym before.</strong> January LA Fitness, random YouTube PPL split, saw nothing, quit, felt worse than before you started.</span></li>
+      <li class="pi"><span class="px">✕</span><span class="pt"><strong>English fitness content doesn't account for your food.</strong> Nobody's making meal plans around dal rice, Chipotle runs, and Indian restaurant dinners with friends.</span></li>
+      <li class="pi"><span class="px">✕</span><span class="pt"><strong>Nobody around you is doing it either.</strong> Weekend potlucks, biryani, mom saying you look thin one week and round the next. No one in your orbit gets it.</span></li>
     </ul>
   </div>
 </section>
 
-<!-- FEATURES -->
+<!-- OFFER -->
 <section class="s">
   <div class="inner">
-    <div class="tag">The Coaching</div>
-    <h2 class="h2">Everything You Need — With Someone in Your Corner</h2>
+    <div class="tag">The 90-Day Total Reset</div>
+    <h2 class="h2">A complete system built around your NRI life — not a gym-bro fantasy.</h2>
     <div class="rule"></div>
-    <div class="feat-grid">
+    <p class="muted" style="margin-bottom:8px">Four pillars. One system. Built for someone with a demanding job, a desi food culture, and zero patience for plans that don't survive a Monday morning standup.</p>
+    <div class="pillar-grid">
 
-      <div class="fc">
-        <div class="fi"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-        <div class="ft">Custom Nutrition Plan</div>
-        <div class="fd">Your calories, macros and food preferences — built for fat loss without feeling starved or deprived.</div>
+      <div class="pc">
+        <div class="pi2"><svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
+        <div class="pt2">Custom Training Program</div>
+        <div class="pd">
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:5px;">
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>4–5 days/week built around your 9-to-6</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Gym or home — whatever you have access to</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Weekly form check videos reviewed by me</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Progressive overload tracked so you actually see numbers go up</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="fc">
-        <div class="fi"><svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
-        <div class="ft">Personalised Workout Program</div>
-        <div class="fd">Gym or home — structured training designed for your body, your schedule and your goal. Zero guesswork.</div>
+      <div class="pc">
+        <div class="pi2"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <div class="pt2">Nutrition System (Not a Diet)</div>
+        <div class="pd">
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:5px;">
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Protein with desi food — no chicken and broccoli nonsense</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Built for Trader Joe's, Costco, Tesco &amp; Indian grocery stores</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Eating out playbook: Chipotle, Subway, Indian restaurants, work lunches</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Diwali parties, potlucks, Super Bowl — handled</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="fc">
-        <div class="fi"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 5.47 5.47l.97-.97a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-        <div class="ft">Weekly 1-on-1 Check-ins</div>
-        <div class="fd">Direct access to me every week. We review progress, solve problems, and keep the plan sharp.</div>
+      <div class="pc">
+        <div class="pi2"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 5.47 5.47l.97-.97a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div class="pt2">Accountability &amp; Mindset</div>
+        <div class="pd">
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:5px;">
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Weekly 1-on-1 calls in Telugu or Tenglish, US/UK time zones</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Daily check-ins via WhatsApp — photo logs, wins, blocks</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Identity-based habit frameworks, not willpower tricks</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Private community of Telugu men on the same journey</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="fc">
-        <div class="fi"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-        <div class="ft">Daily Accountability</div>
-        <div class="fd">Consistency is the hardest part. I keep you on track so small slips never become full setbacks.</div>
-      </div>
-
-      <div class="fc">
-        <div class="fi"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
-        <div class="ft">Plan Adjustments Anytime</div>
-        <div class="fd">Life changes — travel, stress, plateaus. We adapt and keep results coming no matter what.</div>
-      </div>
-
-      <div class="fc">
-        <div class="fi"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
-        <div class="ft">Education &amp; Habit Building</div>
-        <div class="fd">I teach you how to eat, train and think about fitness so results last long after we work together.</div>
+      <div class="pc">
+        <div class="pi2"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        <div class="pt2">Lifestyle Integration</div>
+        <div class="pd">
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:5px;">
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Sleep optimisation for late-night releases and irregular hours</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Stress management built for corporate professionals (not generic advice)</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Supplement guide — what actually works, what to grab on Amazon US/UK</li>
+            <li style="display:flex;gap:8px;align-items:flex-start"><span style="color:var(--ah);flex-shrink:0">→</span>Style basics: how to dress the body you're building</li>
+          </ul>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- RESULTS -->
+<!-- TIMELINE -->
 <section class="s s-alt">
+  <div class="inner-sm">
+    <div class="tag">The 90-Day Arc</div>
+    <h2 class="h2">What happens, week by week.</h2>
+    <div class="rule"></div>
+    <div class="timeline">
+      <div class="phase">
+        <div class="ph-num">Weeks 1–4</div>
+        <div class="ph-body">
+          <div class="ph-title">Foundation</div>
+          <div class="ph-desc">Habits, baseline nutrition, gym comfort. We build the system around your actual schedule — not an ideal one. You stop guessing and start showing up.</div>
+          <div class="ph-outcome">Shows up consistently, eats with intent</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="ph-num">Weeks 5–8</div>
+        <div class="ph-body">
+          <div class="ph-title">Build</div>
+          <div class="ph-desc">Progressive overload kicks in. Nutrition is dialled. You start seeing visible changes in the mirror. Clothes fit differently. Energy goes up. People around you notice something is different.</div>
+          <div class="ph-outcome">Visible mirror change, clothes fit differently</div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="ph-num">Weeks 9–12</div>
+        <div class="ph-body">
+          <div class="ph-title">Lock In</div>
+          <div class="ph-desc">Refinement and independence. You don't need to be told what to do anymore. The system is yours. The identity shift has happened — you're someone who trains, not someone who's trying to.</div>
+          <div class="ph-outcome">Looks different, operates differently</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="s">
   <div class="inner">
-    <div class="tag">Client Results</div>
-    <h2 class="h2">Real People. Real Transformations.</h2>
+    <div class="tag">From the Community</div>
+    <h2 class="h2">Telugu NRIs who did the work.</h2>
     <div class="rule"></div>
     <div class="res-grid">
 
@@ -464,9 +504,9 @@ body {
           <svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7" fill="#a855f7"/></svg>
           <svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7" fill="#a855f7"/></svg>
         </div>
-        <div class="res-num">Lost 11 kg in 10 weeks</div>
-        <div class="res-q">"I'd tried everything before. With Jaswantth's plan I actually understood what I was doing and why. The weight came off and it has stayed off."</div>
-        <div class="res-auth"><div class="av">PK</div><div><div class="an">Priya K.</div><div class="ad">Lost 11 kg &nbsp;·&nbsp; 10 weeks</div></div></div>
+        <div class="res-num">-13 kg in 11 weeks</div>
+        <div class="res-q">"I work in the Bay Area, long hours, always eating out. Jaswantth built everything around my actual life — not some fantasy meal prep schedule. The plan worked because it was real."</div>
+        <div class="res-auth"><div class="av">RV</div><div><div class="an">Ravi V.</div><div class="ad">SWE, Bay Area · 90-Day Reset</div></div></div>
       </div>
 
       <div class="rc">
@@ -477,9 +517,9 @@ body {
           <svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7" fill="#a855f7"/></svg>
           <svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7" fill="#a855f7"/></svg>
         </div>
-        <div class="res-num">From 0 workouts → gym-confident</div>
-        <div class="res-q">"I'd never properly trained before. 8 weeks in I look different, I feel different — people are asking what I'm doing."</div>
-        <div class="res-auth"><div class="av">RA</div><div><div class="an">Rahul A.</div><div class="ad">Body recomp &nbsp;·&nbsp; 8 weeks</div></div></div>
+        <div class="res-num">First person in my circle who got it</div>
+        <div class="res-q">"Nobody around me understood why I wanted to do this. The check-ins in Telugu made it feel like talking to a friend who gets the NRI life — the food, the stress, the whole thing. 10 weeks later I look unrecognisable."</div>
+        <div class="res-auth"><div class="av">AK</div><div><div class="an">Arun K.</div><div class="ad">IT Consultant, London · 90-Day Reset</div></div></div>
       </div>
 
       <div class="rc">
@@ -490,52 +530,64 @@ body {
           <svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7" fill="#a855f7"/></svg>
           <svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7" fill="#a855f7"/></svg>
         </div>
-        <div class="res-num">Down 7 kg, energy through the roof</div>
-        <div class="res-q">"As a working mum with zero time, I dropped 7 kg in 12 weeks without giving up the foods I love."</div>
-        <div class="res-auth"><div class="av">SM</div><div><div class="an">Sneha M.</div><div class="ad">Lost 7 kg &nbsp;·&nbsp; 12 weeks</div></div></div>
+        <div class="res-num">India trip. Zero comments.</div>
+        <div class="res-q">"I went back home after 90 days. For the first time in years, relatives didn't comment on my weight. That alone was worth every dollar. The confidence is different now."</div>
+        <div class="res-auth"><div class="av">SK</div><div><div class="an">Suresh K.</div><div class="ad">Data Analyst, Dallas · 90-Day Reset</div></div></div>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="s">
+<!-- PRICING -->
+<section class="s s-alt" id="pricing">
   <div class="inner">
-    <div class="tag">Your Coach</div>
-    <h2 class="h2">About Jaswantth</h2>
+    <div class="tag">Investment</div>
+    <h2 class="h2">Two tiers. One system. Pick what fits.</h2>
     <div class="rule"></div>
-    <div class="about-layout">
-      <div class="about-card">
-        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-      </div>
-      <div class="about-txt">
-        <div class="about-name">Jaswantth</div>
-        <div class="about-role">Certified Fitness &amp; Weight Loss Coach</div>
-        <p class="about-p">I know what it's like to feel stuck — to try plan after plan and wonder why nothing sticks. That frustration is what drove me to become a coach. I make fitness simple, sustainable and completely personal to you.</p>
-        <p class="about-p">I've helped 200+ clients lose weight, build strength and completely change how they feel about their bodies — without crash diets or punishing routines.</p>
-        <ul class="creds">
-          <li class="cr"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Certified Personal Trainer</li>
-          <li class="cr"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Nutrition &amp; Fat Loss Specialist</li>
-          <li class="cr"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>200+ clients coached online</li>
-          <li class="cr"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Specialises in sustainable, real-life transformation</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+    <p class="muted" style="margin-bottom:8px;">For someone earning $7K–$10K/month, this is 3–5% of one month's income. Less than a business class seat home.</p>
+    <div class="price-grid">
 
-<!-- PROCESS -->
-<section class="s s-alt">
-  <div class="inner-sm">
-    <div class="tag">How It Works</div>
-    <h2 class="h2">From Application to Transformation</h2>
-    <div class="rule"></div>
-    <div class="steps">
-      <div class="step"><div class="sn">01</div><div class="sb"><div class="st">Fill Out the Application</div><div class="sd">Tell me about your goals, current lifestyle, and what's held you back. Takes 3 minutes.</div></div></div>
-      <div class="step"><div class="sn">02</div><div class="sb"><div class="st">Free Strategy Call</div><div class="sd">We get on a quick call, go over your goals, and I'll tell you exactly what your plan looks like.</div></div></div>
-      <div class="step"><div class="sn">03</div><div class="sb"><div class="st">Your Custom Plan — Ready in 48 Hours</div><div class="sd">Personalised workout program, nutrition plan and check-in schedule built entirely around you.</div></div></div>
-      <div class="step"><div class="sn">04</div><div class="sb"><div class="st">Execute &amp; Get Results</div><div class="sd">We work week by week. You show up, I keep you accountable and adjust as needed. Results follow.</div></div></div>
+      <div class="price-card">
+        <div>
+          <div class="price-tier">Core</div>
+          <div class="price-num"><sup>$</sup>597</div>
+          <div class="price-per">for 90 days &nbsp;·&nbsp; ~$200/month</div>
+        </div>
+        <div class="price-desc">The full training + nutrition system with daily WhatsApp accountability.</div>
+        <ul class="price-list">
+          <li>Custom training program (gym or home)</li>
+          <li>Telugu-friendly nutrition system</li>
+          <li>Eating out &amp; social occasion playbook</li>
+          <li>Daily WhatsApp / Notion accountability</li>
+          <li>Progressive overload tracking</li>
+          <li>30-day money-back guarantee</li>
+        </ul>
+        <a href="#apply" class="btn btn-outline" style="text-align:center;">Apply — Core</a>
+        <div class="price-note">3 monthly payments of $209 available</div>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-badge">Most Popular</div>
+        <div>
+          <div class="price-tier">Premium</div>
+          <div class="price-num"><sup>$</sup>897</div>
+          <div class="price-per">for 90 days &nbsp;·&nbsp; ~$300/month</div>
+        </div>
+        <div class="price-desc">Everything in Core, plus weekly 1-on-1 calls and full lifestyle integration.</div>
+        <ul class="price-list">
+          <li>Everything in Core</li>
+          <li>Weekly 1-on-1 calls (Telugu/Tenglish, your timezone)</li>
+          <li>Private community of Telugu men on the reset</li>
+          <li>Sleep &amp; stress optimisation for corporate professionals</li>
+          <li>Supplement guide (Amazon US/UK)</li>
+          <li>Style &amp; grooming basics module</li>
+          <li>30-day money-back guarantee</li>
+        </ul>
+        <a href="#apply" class="btn" style="text-align:center;">Apply — Premium</a>
+        <div class="price-note">3 monthly payments of $309 available</div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -544,13 +596,13 @@ body {
 <section class="s">
   <div class="inner-sm">
     <div class="tag">Zero Risk</div>
-    <h2 class="h2">If You Don't See Results, You Don't Pay</h2>
+    <h2 class="h2">Follow the system for 30 days. If it doesn't work, full refund.</h2>
     <div class="rule"></div>
     <div class="g-box">
       <div class="g-badge"><div class="gd">30</div><div class="gl">Day<br>Guarantee</div></div>
       <div>
         <div class="g-title">My Personal Guarantee</div>
-        <div class="g-body">Follow the plan I give you for 30 days. Show up for your check-ins. If you haven't seen real, measurable progress, I'll refund you in full — no questions, no fuss. I only win when you win.</div>
+        <div class="g-body">Log your workouts. Track your food. Show up for your check-ins. If after 30 days you haven't seen real, measurable progress — email me once and I'll refund every dollar, no questions asked. This filters out people who won't do the work. If you're reading this, that's not you.</div>
       </div>
     </div>
   </div>
@@ -560,39 +612,71 @@ body {
 <section class="s s-alt" id="apply">
   <div class="inner-sm">
     <div class="tag">Apply Now</div>
-    <h2 class="h2" style="text-align:center">Ready to Change Your Body?</h2>
+    <h2 class="h2" style="text-align:center">3-minute application. 15-minute call. Start in 48 hours.</h2>
     <div class="rule rule-c"></div>
     <div class="form-box">
-      <h3>Apply for 1-on-1 Coaching</h3>
-      <p>Fill this out and I'll reach out within 24 hours to book your free strategy call. Spots are limited.</p>
+      <h3>Apply for the 90-Day Total Reset</h3>
+      <p class="form-sub">Fill this out and I'll reach out within 24 hours to book a free 15-min discovery call — in Telugu or Tenglish, on your timezone. No pressure. No pitch deck. Just a conversation.</p>
       <form class="form" id="applyForm" onsubmit="submitForm(event)">
         <div class="row">
-          <div class="field"><label>First Name</label><input type="text" placeholder="Your first name" required></div>
-          <div class="field"><label>Last Name</label><input type="text" placeholder="Your last name" required></div>
+          <div class="field"><label>First Name</label><input type="text" placeholder="Ravi" required></div>
+          <div class="field"><label>Last Name</label><input type="text" placeholder="Krishnamurthy" required></div>
         </div>
-        <div class="field"><label>Email Address</label><input type="email" placeholder="you@email.com" required></div>
-        <div class="field"><label>WhatsApp / Phone</label><input type="tel" placeholder="+91 xxxxx xxxxx"></div>
+        <div class="row">
+          <div class="field"><label>Email</label><input type="email" placeholder="ravi@email.com" required></div>
+          <div class="field"><label>WhatsApp Number</label><input type="tel" placeholder="+1 xxx xxx xxxx"></div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>Where are you based?</label>
+            <select required>
+              <option value="" disabled selected>Select location</option>
+              <option>US — Bay Area</option>
+              <option>US — Dallas / Texas</option>
+              <option>US — New Jersey / NYC</option>
+              <option>US — Chicago</option>
+              <option>US — Seattle</option>
+              <option>US — Atlanta</option>
+              <option>US — Other</option>
+              <option>UK — London</option>
+              <option>UK — Birmingham</option>
+              <option>UK — Manchester</option>
+              <option>UK — Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>What do you do?</label>
+            <select required>
+              <option value="" disabled selected>Select occupation</option>
+              <option>Software Engineer / SWE</option>
+              <option>IT Consultant</option>
+              <option>Data / Analytics</option>
+              <option>Product Manager</option>
+              <option>Healthcare Professional</option>
+              <option>Other tech / corporate</option>
+            </select>
+          </div>
+        </div>
         <div class="field">
-          <label>Main Goal</label>
-          <select required>
-            <option value="" disabled selected>Select your goal</option>
-            <option>Lose weight / fat loss</option>
-            <option>Build muscle / get stronger</option>
-            <option>Body recomposition</option>
-            <option>Improve overall fitness &amp; energy</option>
+          <label>Which tier are you considering?</label>
+          <select>
+            <option value="" disabled selected>Select tier</option>
+            <option>Core — $597 for 90 days</option>
+            <option>Premium — $897 for 90 days</option>
+            <option>Not sure yet, want to talk first</option>
           </select>
         </div>
-        <div class="field"><label>Biggest Obstacle Right Now</label><textarea placeholder="e.g. I keep falling off diet plans, I don't know what to do in the gym..." required></textarea></div>
-        <button type="submit" class="btn" style="width:100%;margin-top:6px">Submit Application</button>
+        <div class="field"><label>What's your current situation and main goal?</label><textarea placeholder="e.g. Been in the US 4 years, gained weight since I joined the job, tried gym twice, couldn't stay consistent. Want to lose ~15kg and actually feel confident." required></textarea></div>
+        <button type="submit" class="btn" style="width:100%;margin-top:4px">Submit Application</button>
         <div class="form-note">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Your information is private and will never be shared.
+          Your information is private. This is not a sales page. It's a conversation.
         </div>
       </form>
       <div id="formSuccess">
         <svg class="check-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
-        <div class="success-title">Application Received!</div>
-        <div class="success-body">I'll be in touch within 24 hours to book your free strategy call.</div>
+        <div class="success-title">Application Received.</div>
+        <div class="success-body">I'll message you on WhatsApp within 24 hours to book the discovery call.</div>
       </div>
     </div>
   </div>
@@ -602,30 +686,31 @@ body {
 <section class="s">
   <div class="inner-sm">
     <div class="tag">Questions</div>
-    <h2 class="h2">Frequently Asked Questions</h2>
+    <h2 class="h2">Straight answers.</h2>
     <div class="rule"></div>
     <div class="faq" id="faq">
-      <div class="fi2"><button class="fq">Do I need a gym membership? <span class="farr">&#9662;</span></button><div class="fa">No. I build programs for the gym or for home — whatever works for you. We'll figure it out on the strategy call.</div></div>
-      <div class="fi2"><button class="fq">How fast will I see results? <span class="farr">&#9662;</span></button><div class="fa">Most clients notice a visible difference in 3–4 weeks and hit their first big milestone by week 8–10. You'll feel the difference in energy and confidence much sooner.</div></div>
-      <div class="fi2"><button class="fq">I've tried lots of plans before. How is this different? <span class="farr">&#9662;</span></button><div class="fa">Most plans fail because they're generic. Everything I build is 100% around you — your food preferences, your schedule, your life. And I'm checking in with you every step of the way.</div></div>
-      <div class="fi2"><button class="fq">I'm a complete beginner. Is this right for me? <span class="farr">&#9662;</span></button><div class="fa">Absolutely. Some of my best transformations are with people who've never properly trained before. Beginners often see the fastest results — and I make sure you feel confident from day one.</div></div>
-      <div class="fi2"><button class="fq">How does the free strategy call work? <span class="farr">&#9662;</span></button><div class="fa">It's a 20–30 minute call (video or voice) where we talk about your goals and what's held you back. I'll tell you exactly what coaching would look like. No pressure, no obligation.</div></div>
+      <div class="fi"><button class="fq">Is this actually in Telugu? <span class="farr">&#9662;</span></button><div class="fa">Yes. Check-in calls are Telugu or Tenglish — whatever feels natural. The nutrition system is built around desi food in US and UK grocery stores. This isn't translated generic content. It's built from scratch for this specific person.</div></div>
+      <div class="fi"><button class="fq">I work long hours and travel for work. Will this survive my schedule? <span class="farr">&#9662;</span></button><div class="fa">That's exactly who this is built for. The plan works around a real 9-to-6 (or 9-to-9), late-night releases, Monday morning standups, and business trips. We design for the life you actually live, not an ideal one.</div></div>
+      <div class="fi"><button class="fq">I've tried gym twice before and quit. Why would this be different? <span class="farr">&#9662;</span></button><div class="fa">Because the previous attempts didn't have accountability, a culturally relevant nutrition plan, or a system designed for your schedule. Most people don't fail because they're lazy — they fail because the plan wasn't built for them. This one is.</div></div>
+      <div class="fi"><button class="fq">What if I travel to India or go on vacation during the 90 days? <span class="farr">&#9662;</span></button><div class="fa">We plan for it. Travel nutrition guides, modified training for limited equipment, and India trip guidelines are all part of the system. This isn't a plan that falls apart the moment life happens.</div></div>
+      <div class="fi"><button class="fq">How is $597/$897 worth it compared to a gym membership? <span class="farr">&#9662;</span></button><div class="fa">A gym membership gives you access to equipment. This gives you a system, accountability, weekly calls, nutrition built for your food culture, and someone who's going to make sure you don't quit. For someone earning $7K to $10K/month, this is 3–5% of one month's income for a 90-day transformation. The gym membership you're not using costs more over time.</div></div>
+      <div class="fi"><button class="fq">What does the discovery call look like? <span class="farr">&#9662;</span></button><div class="fa">15 minutes, Telugu or Tenglish, on your timezone. We talk about where you are now, what you've tried, and what you want. I'll tell you exactly what coaching would look like. No pressure, no upsell scripts. If it's not a fit, I'll tell you that too.</div></div>
     </div>
   </div>
 </section>
 
 <!-- FOOTER CTA -->
 <div class="fcta">
-  <div class="chip" style="margin-bottom:24px"><span class="chip-dot"></span>Limited Spots Available</div>
-  <h2 class="h2" style="max-width:520px;margin:0 auto 14px;text-align:center">Stop Waiting for the Right Time.</h2>
-  <p class="body-txt" style="max-width:420px;margin:0 auto 36px;text-align:center">Every week you wait is another week of the same results. Apply today.</p>
-  <a href="#apply" class="btn">Apply for Coaching</a>
-  <p class="micro">Free strategy call &nbsp;·&nbsp; 30-day guarantee</p>
+  <div class="chip" style="margin-bottom:22px"><span class="chip-dot"></span>Spots fill up each month</div>
+  <h2 class="h2" style="max-width:520px;margin:0 auto 14px;text-align:center">The gap between how you earn and how you look is fixable. In 90 days.</h2>
+  <p class="muted" style="max-width:420px;margin:0 auto 36px;text-align:center">Every week you wait is another week carrying it. Apply now and let's have the call.</p>
+  <a href="#apply" class="btn">Apply for the 90-Day Reset</a>
+  <p class="micro" style="margin-top:14px">Free discovery call · Telugu / Tenglish · US &amp; UK timezones</p>
 </div>
 
 <div class="footer-legal">
-  <p>&#169; 2026 Jaswantth Fitness Coaching &nbsp;·&nbsp; <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Terms</a></p>
-  <p>Results shown are from real clients and are not guaranteed. Individual results vary based on effort, consistency and individual factors.</p>
+  <p>© 2026 Jaswantth Fitness Coaching &nbsp;·&nbsp; <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Terms</a></p>
+  <p>Results shown are from real clients. Individual results vary based on effort, consistency and individual factors. This is not a guarantee of specific outcomes.</p>
 </div>
 
 <script>
@@ -634,7 +719,7 @@ body {
 
   /* VSL */
   var TOTAL = 180, prog = 0, playing = false, timer = null;
-  function fmt(s) { return Math.floor(s/60)+':'+(s%60<10?'0':'')+Math.floor(s%60); }
+  function fmt(s) { return Math.floor(s / 60) + ':' + (s % 60 < 10 ? '0' : '') + (s % 60); }
   window.toggleVSL = function () {
     var vsl = document.getElementById('vsl');
     var thumb = document.getElementById('vthumb');
@@ -665,9 +750,9 @@ body {
   document.getElementById('faq').addEventListener('click', function (e) {
     var btn = e.target.closest('.fq');
     if (!btn) return;
-    var item = btn.closest('.fi2');
+    var item = btn.closest('.fi');
     var open = item.classList.contains('open');
-    document.querySelectorAll('.fi2.open').forEach(function (el) { el.classList.remove('open'); });
+    document.querySelectorAll('.fi.open').forEach(function (el) { el.classList.remove('open'); });
     if (!open) item.classList.add('open');
   });
 
