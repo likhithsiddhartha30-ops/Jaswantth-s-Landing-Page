@@ -52,11 +52,21 @@ body {
 /* ── HERO ── */
 .hero {
   min-height: 100svh;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  padding: 80px 20px 60px;
-  text-align: center;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 80px 40px 60px;
   background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(147,51,234,.2) 0%, transparent 65%);
 }
+.hero-inner {
+  max-width: 1160px; margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+}
+@media (max-width: 860px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  .hero-inner .chip { margin-left: auto; margin-right: auto; }
+  .hero-inner .micro { text-align: center; }
+}
+.hero-left { display: flex; flex-direction: column; align-items: flex-start; }
+@media (max-width: 860px) { .hero-left { align-items: center; } }
 .chip {
   display: inline-flex; align-items: center; gap: 8px;
   border: 1px solid var(--border);
@@ -72,20 +82,20 @@ body {
 @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.3;transform:scale(.7)} }
 .h1 {
   font-family: var(--fh);
-  font-size: clamp(2.1rem, 5vw, 3.6rem);
+  font-size: clamp(1.9rem, 3.2vw, 3rem);
   font-weight: 900; line-height: 1.08;
   letter-spacing: -.025em;
   text-wrap: balance;
-  max-width: 780px; margin: 0 auto 20px;
+  margin: 0 0 18px;
 }
 .h1 em { font-style: normal; color: var(--ah); }
 .hero-sub {
-  font-size: 1.05rem; color: rgba(255,255,255,.75);
-  max-width: 480px; margin: 0 auto 40px; line-height: 1.7;
+  font-size: 1rem; color: rgba(255,255,255,.7);
+  max-width: 440px; margin: 0 0 36px; line-height: 1.72;
 }
 
 /* ── VSL ── */
-.vsl-wrap { width: 100%; max-width: 740px; margin: 0 auto 40px; }
+.vsl-wrap { width: 100%; }
 .vsl {
   position: relative; width: 100%; aspect-ratio: 16/9;
   background: var(--panel);
@@ -338,30 +348,33 @@ body {
 
 <!-- HERO -->
 <section class="hero">
-  <div class="chip"><span class="chip-dot"></span>Fitness &amp; Weight Loss Coaching</div>
-  <h1 class="h1">Get Lean, Lose Weight &amp; Feel <em>Genuinely Confident</em> in Your Body</h1>
-  <p class="hero-sub">1-on-1 online coaching personalised to your life. No crash diets. No punishing workouts. Just real, lasting results.</p>
-
-  <!-- VSL -->
-  <div class="vsl-wrap">
-    <div class="vsl" id="vsl" onclick="toggleVSL()">
-      <div class="vsl-thumb" id="vthumb">
-        <div class="play"><div class="play-tri"></div></div>
-        <div class="vsl-label">Watch — How My Clients Transform</div>
-        <div class="vsl-dur">3 min · Free to watch</div>
-      </div>
-      <div class="vsl-bar"><div class="vsl-fill" id="vfill"></div></div>
-      <div class="vsl-ctrl">
-        <span id="vbtn" style="font-size:.8rem;color:rgba(255,255,255,.75);cursor:pointer;" onclick="event.stopPropagation();toggleVSL()">&#9646;&#9646;</span>
-        <span class="vt" id="vtime">0:00</span>
-        <div class="vsl-seek"><div class="vs-fill" id="vsfill"></div></div>
-        <span class="vt">3:00</span>
+  <div class="hero-inner">
+    <!-- Left: copy -->
+    <div class="hero-left">
+      <div class="chip"><span class="chip-dot"></span>Fitness &amp; Weight Loss Coaching</div>
+      <h1 class="h1">Get Lean, Lose Weight &amp; Feel <em>Genuinely Confident</em> in Your Body</h1>
+      <p class="hero-sub">1-on-1 online coaching personalised to your life. No crash diets. No punishing workouts. Just real, lasting results.</p>
+      <a href="#apply" class="btn">Apply for Coaching — It's Free</a>
+      <p class="micro" style="margin-top:12px">Free strategy call &nbsp;·&nbsp; Limited spots each month</p>
+    </div>
+    <!-- Right: VSL -->
+    <div class="vsl-wrap">
+      <div class="vsl" id="vsl" onclick="toggleVSL()">
+        <div class="vsl-thumb" id="vthumb">
+          <div class="play"><div class="play-tri"></div></div>
+          <div class="vsl-label">Watch — How My Clients Transform</div>
+          <div class="vsl-dur">3 min · Free to watch</div>
+        </div>
+        <div class="vsl-bar"><div class="vsl-fill" id="vfill"></div></div>
+        <div class="vsl-ctrl">
+          <span id="vbtn" style="font-size:.8rem;color:rgba(255,255,255,.75);cursor:pointer;" onclick="event.stopPropagation();toggleVSL()">&#9646;&#9646;</span>
+          <span class="vt" id="vtime">0:00</span>
+          <div class="vsl-seek"><div class="vs-fill" id="vsfill"></div></div>
+          <span class="vt">3:00</span>
+        </div>
       </div>
     </div>
   </div>
-
-  <a href="#apply" class="btn">Apply for Coaching — It's Free</a>
-  <p class="micro">Free strategy call &nbsp;·&nbsp; Limited spots each month</p>
 </section>
 
 <!-- STATS -->
