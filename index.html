@@ -209,33 +209,6 @@ body {
 .an { font-family:var(--fh);font-weight:700;font-size:.85rem;color:#fff; }
 .ad { font-size:.7rem;color:rgba(255,255,255,.45); }
 
-/* PRICING */
-.price-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 40px; }
-@media (max-width:640px) { .price-grid { grid-template-columns: 1fr; } }
-.price-card {
-  background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 36px 28px;
-  display: flex; flex-direction: column; gap: 20px; position: relative; overflow: hidden;
-}
-.price-card.featured {
-  border-color: rgba(147,51,234,.5);
-  box-shadow: 0 0 44px rgba(147,51,234,.14);
-}
-.price-badge {
-  position: absolute; top: 20px; right: 20px;
-  background: var(--accent); color: #fff;
-  font-family: var(--fh); font-size: .65rem; font-weight: 800;
-  letter-spacing: .12em; text-transform: uppercase;
-  border-radius: 100px; padding: 4px 12px;
-}
-.price-tier { font-family: var(--fh); font-size: .72rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--ah); }
-.price-num { font-family: var(--fh); font-size: 2.6rem; font-weight: 900; line-height: 1; color: #fff; }
-.price-num sup { font-size: .45em; vertical-align: super; color: rgba(255,255,255,.65); }
-.price-per { font-size: .78rem; color: rgba(255,255,255,.45); margin-top: 2px; }
-.price-desc { font-size: .92rem; color: rgba(255,255,255,.65); line-height: 1.6; }
-.price-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
-.price-list li { display: flex; align-items: flex-start; gap: 10px; font-size: .92rem; color: rgba(255,255,255,.8); }
-.price-list li::before { content: '✓'; color: var(--ah); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
-.price-note { font-size: .75rem; color: rgba(255,255,255,.4); text-align: center; }
 
 /* GUARANTEE */
 .g-box {
@@ -256,37 +229,6 @@ body {
 .g-body { font-size: .93rem; color: rgba(255,255,255,.7); line-height: 1.65; }
 @media (max-width:500px) { .g-box { flex-direction: column; align-items: center; text-align: center; padding: 28px 18px; } }
 
-/* FORM */
-.form-box {
-  background: var(--panel); border: 1px solid rgba(147,51,234,.32); border-radius: 20px;
-  padding: 48px 44px; margin-top: 40px;
-  box-shadow: 0 0 60px rgba(147,51,234,.1);
-}
-.form-box h3 { font-family: var(--fh); font-size: 1.35rem; font-weight: 900; margin-bottom: 6px; }
-.form-box .form-sub { font-size: .92rem; color: rgba(255,255,255,.55); margin-bottom: 28px; line-height: 1.6; }
-.form { display: flex; flex-direction: column; gap: 13px; }
-.row { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
-@media (max-width:540px) { .row { grid-template-columns: 1fr; } .form-box { padding: 30px 18px; } }
-.field { display: flex; flex-direction: column; gap: 5px; }
-.field label { font-size: .66rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.45); }
-.field input, .field select, .field textarea {
-  background: rgba(255,255,255,.04); border: 1px solid rgba(147,51,234,.22); border-radius: 8px;
-  color: #fff; font-family: var(--fb); font-size: .93rem;
-  padding: 12px 14px; outline: none;
-  transition: border-color .18s, box-shadow .18s;
-  appearance: none; -webkit-appearance: none;
-}
-.field input::placeholder, .field textarea::placeholder { color: rgba(255,255,255,.22); }
-.field input:focus, .field select:focus, .field textarea:focus {
-  border-color: var(--ah); box-shadow: 0 0 0 3px rgba(147,51,234,.14);
-}
-.field select option { background: #130013; }
-.field textarea { resize: vertical; min-height: 90px; }
-.form-note { font-size: .7rem; color: rgba(255,255,255,.35); display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 10px; }
-#formSuccess { display: none; text-align: center; padding: 44px 0; }
-.check-icon { width: 50px; height: 50px; display: block; margin: 0 auto 14px; stroke: var(--ah); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-.success-title { font-family: var(--fh); font-size: 1.3rem; font-weight: 900; margin-bottom: 8px; }
-.success-body { font-size: .92rem; color: rgba(255,255,255,.6); }
 
 /* FAQ */
 .faq { display: flex; flex-direction: column; gap: 2px; margin-top: 40px; }
@@ -366,11 +308,11 @@ body {
     <div class="rule"></div>
     <p class="muted" style="margin-bottom:32px">You moved to the US or UK. Got the job. Sends money home. The LinkedIn is polished. But somewhere between the H-1B grind, the 12-hour days, and the Uber Eats orders — the body fell apart. And the worst part? You can't blame circumstances anymore.</p>
     <ul class="pain-list">
-      <li class="pi"><span class="px">✕</span><span class="pt"><strong>You wear an oversized hoodie to the office</strong> while your American colleagues look put together without trying.</span></li>
-      <li class="pi"><span class="px">✕</span><span class="pt"><strong>Relatives comment within 5 minutes of landing in India.</strong> The salary impresses them. The body doesn't.</span></li>
-      <li class="pi"><span class="px">✕</span><span class="pt"><strong>You've tried gym before.</strong> January LA Fitness, random YouTube PPL split, saw nothing, quit, felt worse than before you started.</span></li>
-      <li class="pi"><span class="px">✕</span><span class="pt"><strong>English fitness content doesn't account for your food.</strong> Nobody's making meal plans around dal rice, Chipotle runs, and Indian restaurant dinners with friends.</span></li>
-      <li class="pi"><span class="px">✕</span><span class="pt"><strong>Nobody around you is doing it either.</strong> Weekend potlucks, biryani, mom saying you look thin one week and round the next. No one in your orbit gets it.</span></li>
+      <li class="pi"><span class="px"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:block"><line x1="1.5" y1="1.5" x2="9.5" y2="9.5"/><line x1="9.5" y1="1.5" x2="1.5" y2="9.5"/></svg></span><span class="pt"><strong>You wear an oversized hoodie to the office</strong> while your American colleagues look put together without trying.</span></li>
+      <li class="pi"><span class="px"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:block"><line x1="1.5" y1="1.5" x2="9.5" y2="9.5"/><line x1="9.5" y1="1.5" x2="1.5" y2="9.5"/></svg></span><span class="pt"><strong>Relatives comment within 5 minutes of landing in India.</strong> The salary impresses them. The body doesn't.</span></li>
+      <li class="pi"><span class="px"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:block"><line x1="1.5" y1="1.5" x2="9.5" y2="9.5"/><line x1="9.5" y1="1.5" x2="1.5" y2="9.5"/></svg></span><span class="pt"><strong>You've tried gym before.</strong> January LA Fitness, random YouTube PPL split, saw nothing, quit, felt worse than before you started.</span></li>
+      <li class="pi"><span class="px"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:block"><line x1="1.5" y1="1.5" x2="9.5" y2="9.5"/><line x1="9.5" y1="1.5" x2="1.5" y2="9.5"/></svg></span><span class="pt"><strong>English fitness content doesn't account for your food.</strong> Nobody's making meal plans around dal rice, Chipotle runs, and Indian restaurant dinners with friends.</span></li>
+      <li class="pi"><span class="px"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:block"><line x1="1.5" y1="1.5" x2="9.5" y2="9.5"/><line x1="9.5" y1="1.5" x2="1.5" y2="9.5"/></svg></span><span class="pt"><strong>Nobody around you is doing it either.</strong> Weekend potlucks, biryani, mom saying you look thin one week and round the next. No one in your orbit gets it.</span></li>
     </ul>
   </div>
 </section>
@@ -526,58 +468,6 @@ body {
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="s s-alt" id="pricing">
-  <div class="inner">
-    <div class="tag">Investment</div>
-    <h2 class="h2">Two tiers. One system. Pick what fits.</h2>
-    <div class="rule"></div>
-    <p class="muted" style="margin-bottom:8px;">For someone earning $7K–$10K/month, this is 3–5% of one month's income. Less than a business class seat home.</p>
-    <div class="price-grid">
-
-      <div class="price-card">
-        <div>
-          <div class="price-tier">Core</div>
-          <div class="price-num"><sup>$</sup>597</div>
-          <div class="price-per">for 90 days &nbsp;·&nbsp; ~$200/month</div>
-        </div>
-        <div class="price-desc">The full training + nutrition system with daily WhatsApp accountability.</div>
-        <ul class="price-list">
-          <li>Custom training program (gym or home)</li>
-          <li>Telugu-friendly nutrition system</li>
-          <li>Eating out &amp; social occasion playbook</li>
-          <li>Daily WhatsApp / Notion accountability</li>
-          <li>Progressive overload tracking</li>
-          <li>30-day money-back guarantee</li>
-        </ul>
-        <a href="#apply" class="btn btn-outline" style="text-align:center;">Apply — Core</a>
-        <div class="price-note">3 monthly payments of $209 available</div>
-      </div>
-
-      <div class="price-card featured">
-        <div class="price-badge">Most Popular</div>
-        <div>
-          <div class="price-tier">Premium</div>
-          <div class="price-num"><sup>$</sup>897</div>
-          <div class="price-per">for 90 days &nbsp;·&nbsp; ~$300/month</div>
-        </div>
-        <div class="price-desc">Everything in Core, plus weekly 1-on-1 calls and full lifestyle integration.</div>
-        <ul class="price-list">
-          <li>Everything in Core</li>
-          <li>Weekly 1-on-1 calls (Telugu/Tenglish, your timezone)</li>
-          <li>Private community of Telugu men on the reset</li>
-          <li>Sleep &amp; stress optimisation for corporate professionals</li>
-          <li>Supplement guide (Amazon US/UK)</li>
-          <li>Style &amp; grooming basics module</li>
-          <li>30-day money-back guarantee</li>
-        </ul>
-        <a href="#apply" class="btn" style="text-align:center;">Apply — Premium</a>
-        <div class="price-note">3 monthly payments of $309 available</div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 <!-- GUARANTEE -->
 <section class="s">
@@ -597,75 +487,13 @@ body {
 
 <!-- APPLY -->
 <section class="s s-alt" id="apply">
-  <div class="inner-sm">
+  <div class="inner-sm" style="display:flex;flex-direction:column;align-items:center;text-align:center">
     <div class="tag">Apply Now</div>
-    <h2 class="h2" style="text-align:center">3-minute application. 15-minute call. Start in 48 hours.</h2>
-    <div class="rule rule-c"></div>
-    <div class="form-box">
-      <h3>Apply for the 90-Day Total Reset</h3>
-      <p class="form-sub">Fill this out and I'll reach out within 24 hours to book a free 15-min discovery call — in Telugu or Tenglish, on your timezone. No pressure. No pitch deck. Just a conversation.</p>
-      <form class="form" id="applyForm" onsubmit="submitForm(event)">
-        <div class="row">
-          <div class="field"><label>First Name</label><input type="text" placeholder="Ravi" required></div>
-          <div class="field"><label>Last Name</label><input type="text" placeholder="Krishnamurthy" required></div>
-        </div>
-        <div class="row">
-          <div class="field"><label>Email</label><input type="email" placeholder="ravi@email.com" required></div>
-          <div class="field"><label>WhatsApp Number</label><input type="tel" placeholder="+1 xxx xxx xxxx"></div>
-        </div>
-        <div class="row">
-          <div class="field">
-            <label>Where are you based?</label>
-            <select required>
-              <option value="" disabled selected>Select location</option>
-              <option>US — Bay Area</option>
-              <option>US — Dallas / Texas</option>
-              <option>US — New Jersey / NYC</option>
-              <option>US — Chicago</option>
-              <option>US — Seattle</option>
-              <option>US — Atlanta</option>
-              <option>US — Other</option>
-              <option>UK — London</option>
-              <option>UK — Birmingham</option>
-              <option>UK — Manchester</option>
-              <option>UK — Other</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>What do you do?</label>
-            <select required>
-              <option value="" disabled selected>Select occupation</option>
-              <option>Software Engineer / SWE</option>
-              <option>IT Consultant</option>
-              <option>Data / Analytics</option>
-              <option>Product Manager</option>
-              <option>Healthcare Professional</option>
-              <option>Other tech / corporate</option>
-            </select>
-          </div>
-        </div>
-        <div class="field">
-          <label>Which tier are you considering?</label>
-          <select>
-            <option value="" disabled selected>Select tier</option>
-            <option>Core — $597 for 90 days</option>
-            <option>Premium — $897 for 90 days</option>
-            <option>Not sure yet, want to talk first</option>
-          </select>
-        </div>
-        <div class="field"><label>What's your current situation and main goal?</label><textarea placeholder="e.g. Been in the US 4 years, gained weight since I joined the job, tried gym twice, couldn't stay consistent. Want to lose ~15kg and actually feel confident." required></textarea></div>
-        <button type="submit" class="btn" style="width:100%;margin-top:4px">Submit Application</button>
-        <div class="form-note">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Your information is private. This is not a sales page. It's a conversation.
-        </div>
-      </form>
-      <div id="formSuccess">
-        <svg class="check-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
-        <div class="success-title">Application Received.</div>
-        <div class="success-body">I'll message you on WhatsApp within 24 hours to book the discovery call.</div>
-      </div>
-    </div>
+    <h2 class="h2" style="max-width:560px;margin:0 auto 14px">Ready to start your 90-Day Total Reset?</h2>
+    <div class="rule rule-c" style="margin-bottom:28px"></div>
+    <p class="muted" style="max-width:440px;margin:0 auto 36px">Book a free 15-min discovery call — in Telugu or Tenglish, on your timezone. No pressure, no pitch. Just a straight conversation about where you are and what's possible in 90 days.</p>
+    <a href="#" class="btn" style="font-size:1rem;padding:19px 56px">Book Your Free Discovery Call</a>
+    <p class="micro" style="margin-top:14px">Free 15-min call · Telugu / Tenglish · Limited spots each month</p>
   </div>
 </section>
 
@@ -680,7 +508,7 @@ body {
       <div class="fi"><button class="fq">I work long hours and travel for work. Will this survive my schedule? <span class="farr">&#9662;</span></button><div class="fa">That's exactly who this is built for. The plan works around a real 9-to-6 (or 9-to-9), late-night releases, Monday morning standups, and business trips. We design for the life you actually live, not an ideal one.</div></div>
       <div class="fi"><button class="fq">I've tried gym twice before and quit. Why would this be different? <span class="farr">&#9662;</span></button><div class="fa">Because the previous attempts didn't have accountability, a culturally relevant nutrition plan, or a system designed for your schedule. Most people don't fail because they're lazy — they fail because the plan wasn't built for them. This one is.</div></div>
       <div class="fi"><button class="fq">What if I travel to India or go on vacation during the 90 days? <span class="farr">&#9662;</span></button><div class="fa">We plan for it. Travel nutrition guides, modified training for limited equipment, and India trip guidelines are all part of the system. This isn't a plan that falls apart the moment life happens.</div></div>
-      <div class="fi"><button class="fq">How is $597/$897 worth it compared to a gym membership? <span class="farr">&#9662;</span></button><div class="fa">A gym membership gives you access to equipment. This gives you a system, accountability, weekly calls, nutrition built for your food culture, and someone who's going to make sure you don't quit. For someone earning $7K to $10K/month, this is 3–5% of one month's income for a 90-day transformation. The gym membership you're not using costs more over time.</div></div>
+      <div class="fi"><button class="fq">How is this worth it compared to just a gym membership? <span class="farr">&#9662;</span></button><div class="fa">A gym membership gives you access to equipment. This gives you a system, accountability, weekly calls, nutrition built for your food culture, and someone who's going to make sure you don't quit. The gym membership you're not using costs more over time than a 90-day coaching program that actually works.</div></div>
       <div class="fi"><button class="fq">What does the discovery call look like? <span class="farr">&#9662;</span></button><div class="fa">15 minutes, Telugu or Tenglish, on your timezone. We talk about where you are now, what you've tried, and what you want. I'll tell you exactly what coaching would look like. No pressure, no upsell scripts. If it's not a fit, I'll tell you that too.</div></div>
     </div>
   </div>
@@ -743,11 +571,5 @@ body {
     if (!open) item.classList.add('open');
   });
 
-  /* Form */
-  window.submitForm = function (e) {
-    e.preventDefault();
-    document.getElementById('applyForm').style.display = 'none';
-    document.getElementById('formSuccess').style.display = 'block';
-  };
 })();
 </script>
